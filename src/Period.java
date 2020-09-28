@@ -1,21 +1,19 @@
-package br.com.eliaslivinsgthon.trabalho_java_progIII;
-
 public class Period {
     private int year;
-    private String semester;
+    private char semester;
 
     public Period(){
     }
 
-    public Period(int year, String semester ){
+    public Period(int year, char semester ){
         this.semester = semester;
         this.year = year;
     }
 
-    public String getSemester() {
+    public char getSemester() {
         return semester;
     }
-    public void setSemester(String semester) {
+    public void setSemester(char semester) {
         this.semester = semester;
     }
     public int getYear() {
@@ -24,7 +22,11 @@ public class Period {
     public void setYear(int year) {
         this.year = year;
     }
-    public String getPeriod() {
+    public String getPeriodReference() {
         return Integer.toString(year) +"/" +semester;
     }	
+    public void printPeriod(){
+    	System.out.println("\nAno: "+this.year);
+    	System.out.println("Semestre: "+this.semester);
+    }
 }

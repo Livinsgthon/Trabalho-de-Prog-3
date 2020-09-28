@@ -1,5 +1,3 @@
-package br.com.eliaslivinsgthon.trabalho_java_progIII;
-
 public class Student extends Person {
 
     private int registrationCode;
@@ -18,5 +16,13 @@ public class Student extends Person {
 
     public void setRegistrationCode(int registrationCode) {
         this.registrationCode = registrationCode;
+    }
+  
+    public int getStudentReference(){
+        return this.registrationCode;
+    }
+    public void printStudent(){
+    	System.out.println("\nMatricula: " +this.registrationCode);
+    	System.out.println("Nome Completo: " +this.getFullName());
     }
 }

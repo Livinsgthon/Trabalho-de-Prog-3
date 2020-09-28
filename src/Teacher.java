@@ -1,5 +1,3 @@
-package br.com.eliaslivinsgthon.trabalho_java_progIII;
-
 public class Teacher  extends Person{
 
     private String login;
@@ -32,6 +30,18 @@ public class Teacher  extends Person{
 
     public void setWebPage(String webPage) {
         this.webPage = webPage;
+    }
+    public String getTeacherReference(){
+        return this.login;
+    }
+    public void printTeacher(){
+    	if(this.webPage != null) {
+    		System.out.println("\nNome: "+this.getFullName());
+    		System.out.println("Pagina Web: " + this.getWebPage());
+    	}
+    	else {    		
+    		System.out.println("\nNome: "+this.getFullName());
+    	}
     }
 
 
